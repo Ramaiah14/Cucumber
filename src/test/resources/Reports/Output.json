@@ -1,0 +1,173 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Verifying Cancelling of OrderNo after booking",
+        "description": "",
+        "id": "verifying-adactin-hotel-webpage;verifying-cancelling-of-orderno-after-booking;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15800426700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is in Adactin Hotel page",
+            "match": {
+              "location": "HotelPOMStep.a()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2421182900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should login with \"Balaramaiah\" and \"Password@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Balaramaiah\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"Password@123\"",
+                  "offset": 41
+                }
+              ],
+              "location": "HotelPOMStep.b(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5041291200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should search by entering \"London\",\"Hotel Creek\",\"Standard\",\"3-Three\",\"05/12/2021\",\"06/12/2021\",\"3-Three\",\"2-Two\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"London\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"Standard\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"3-Three\"",
+                  "offset": 65
+                },
+                {
+                  "val": "\"05/12/2021\"",
+                  "offset": 75
+                },
+                {
+                  "val": "\"06/12/2021\"",
+                  "offset": 88
+                },
+                {
+                  "val": "\"3-Three\"",
+                  "offset": 101
+                },
+                {
+                  "val": "\"2-Two\"",
+                  "offset": 111
+                }
+              ],
+              "location": "HotelPOMStep.user_should_search_by_entering(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1439113600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should select a hotel",
+            "match": {
+              "location": "HotelPOMStep.c()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 656120100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should book hotel by entering \"Bala\",\"V\",\"Chennai\",\"4929345678963456\",\"VISA\",\"January\",\"2023\",\"567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bala\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"V\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"Chennai\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"4929345678963456\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"VISA\"",
+                  "offset": 75
+                },
+                {
+                  "val": "\"January\"",
+                  "offset": 82
+                },
+                {
+                  "val": "\"2023\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"567\"",
+                  "offset": 99
+                }
+              ],
+              "location": "HotelPOMStep.d(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17747435300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should cancel this order",
+            "match": {
+              "location": "HotelPOMStep.e()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verifying Adactin Hotel Webpage",
+    "description": "",
+    "id": "verifying-adactin-hotel-webpage",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/CancelBooking.feature",
+    "tags": []
+  }
+]
